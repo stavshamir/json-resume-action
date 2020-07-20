@@ -7,6 +7,5 @@ RUN npm install -g resume-cli
 RUN npm install -g jsonresume-theme-macchiato
 
 COPY entrypoint.sh /entrypoint.sh
-COPY resume.json /resume.json
 
 ENTRYPOINT ["/entrypoint.sh"]
