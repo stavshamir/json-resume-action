@@ -1,0 +1,13 @@
+name: 'JSON Resume CI/CD'
+description: 'Verify and generate html and pdf from your json resume'
+inputs:
+  theme:
+    description: 'The theme to be applied'
+    required: false
+    default: 'flat'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.theme }}
+
